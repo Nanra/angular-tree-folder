@@ -19,7 +19,7 @@
 </ul> -->
 <section>
   <nav>
-    <tree [tree]="tree" (nodeSelected)="logEvent($event)" (nodeRenamed)="handleRenamed($event)"></tree>
+    <tree [tree]="tree" (nodeSelected)="logEvent($event)" (nodeRenamed)="handleRenamed($event)" (nodeExpanded)="handleExpanded($event)"></tree>
   </nav>
   <article>
     <router-outlet></router-outlet>

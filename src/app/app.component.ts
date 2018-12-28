@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TreeModel, NodeEvent, NodeSelectedEvent } from 'ng2-tree';
+import { TreeModel, NodeEvent, NodeSelectedEvent, NodeCollapsedEvent, NodeRenamedEvent } from 'ng2-tree';
 import { Router } from '@angular/router';
 
 @Component({
@@ -27,8 +27,8 @@ export class AppComponent {
     ]
   };
 
-  public logEvent(e: NodeEvent): void {
-    switch (e.node.value) {
+  handleSelected(event: NodeEvent): void {
+    switch (event.node.value) {
       case 'Tree': {
         this.route.navigate(['tree']);
         //statements;
@@ -40,9 +40,17 @@ export class AppComponent {
         break;
       }
     }
-    console.log(e, "e");
-    console.log(e.node, "e.node");
-    console.log(e.node.value, "e.node.value");
+    console.log(event, "e");
+    console.log(event.node, "e.node");
+    console.log(event.node.value, "e.node.value");
+  }
+
+  handleExpanded(event: any) {
+    console.log(event);
+  }
+
+  handleCreated(event: NodeEvent){
+    console.log(event);
   }
 
 
