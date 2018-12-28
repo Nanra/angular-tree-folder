@@ -1,0 +1,30 @@
+tree-internal .tree .folding.node-collapsed::before {
+  /* color: #757575; */
+  content: "\f07b";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color:#eda900;
+}
+
+tree-internal .tree .folding.node-expanded::before {
+    content: "\f07c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #eda900;
+}
+
+tree-internal .tree .folding.node-leaf:before {
+  content: '\f016';
+  font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000000;
+}
