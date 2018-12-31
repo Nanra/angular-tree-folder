@@ -1,12 +1,12 @@
 tree-internal .tree .folding.node-collapsed::before {
-  /* color: #757575; */
-  content: "\f07b";
+    /* color: #757575; */
+    content: "\f07b";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-/*--adjust as necessary--*/
-    color:#eda900;
+    /*--adjust as necessary--*/
+    color: #eda900;
 }
 
 tree-internal .tree .folding.node-expanded::before {
@@ -15,26 +15,54 @@ tree-internal .tree .folding.node-expanded::before {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-/*--adjust as necessary--*/
+    /*--adjust as necessary--*/
     color: #eda900;
 }
 
 tree-internal .tree .folding.node-empty:before {
-      content: "\f07b";
+    content: "\f07b";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-/*--adjust as necessary--*/
+    /*--adjust as necessary--*/
     color: #eda900;
 }
 
 tree-internal .tree .folding.node-leaf:before {
-  content: '\f016';
-  font-family: FontAwesome;
+    content: '\f016';
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-/*--adjust as necessary--*/
+    /*--adjust as necessary--*/
     color: #000000;
+}
+
+.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-tag:before {
+    content: '\f016';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #000000;
+}
+
+.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-folder:before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #000000;
+}
+
+.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.rename:before {
+    content: '\270E';
+}
+
+.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.remove:before {
+    content: '\2716';
 }

@@ -27,7 +27,7 @@ export class AppComponent {
     ]
   };
 
-  handleSelected(event: NodeEvent): void {
+  logEvent(event: NodeEvent): void {
     switch (event.node.value) {
       case 'Tree': {
         this.route.navigate(['tree']);
