@@ -31,18 +31,18 @@ export class AppComponent {
     switch (event.node.value) {
       case 'Tree': {
         this.route.navigate(['tree']);
-        //statements;
+        // Statements;
         break;
       }
       case 'Example': {
         this.route.navigate(['example']);
-        //statements;
+        // Statements;
         break;
       }
     }
-    console.log(event, "e");
-    console.log(event.node, "e.node");
-    console.log(event.node.value, "e.node.value");
+    console.log(event, 'e');
+    console.log(event.node, 'e.node');
+    console.log(event.node.value, 'e.node.value');
   }
 
   handleExpanded(event: any) {
